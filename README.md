@@ -27,6 +27,7 @@ The original raw dataset is WWTP-PFAS-CA.csv, and the data processed for develop
 We categorized PFAS levels in WWTP influent and effluent above 70 ng/L (a previous U.S. Environmental Protection Agency (EPA) health advisory level for PFOA and PFOS in drinking water) as high risk (1) and below as low risk (0), while biosolids were marked as high risk at any detectable level due to frequent non-detects. We developed distinct models to assess total PFAS risk in WWTPs based on different inputs. We included general models were limited to commonly monitored standard operational parameters of WWTPs (year, month, influent/effluent volumes, industrial wastewater intake, total organic carbon (TOC), ammonia, BOD, carbonaceous BOD (CBOD), flow rate, pH, total dissolved solids (TDS), and total suspended solids (TSS)) or only 39 PFASs’ concentrations in WWTP influent as inputs. This multiple inputs selection strategy was employed to better assess the risk of PFAS by accommodating scenarios with both comprehensive and limited data. 
 
 Model Training and Optimization:
+
 For each model:
 Algorithm: We employed the CatBoost algorithm, which, in combination with SMOTE oversampling, consistently outperformed other models in predicting high PFAS concentrations in influent, effluent, and biosolids.
 Cross-Validation: Each model underwent 5-fold cross-validation for robust performance estimation.
@@ -37,6 +38,7 @@ Key metrics (accuracy, F1 score, precision, recall, and ROC AUC) are calculated 
 Cross-validation scores are computed to ensure robustness across different data splits.
 
 Model Performance 
+
 Using Operational Parameters:
 Influent: CatBoost achieved 74.2% accuracy in predicting high PFAS concentrations.
 Effluent: CatBoost achieved 73.7% accuracy.
