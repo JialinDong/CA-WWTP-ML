@@ -40,10 +40,13 @@ Cross-validation scores are computed to ensure robustness across different data 
 Model Performance 
 
 Using Operational Parameters:
+
 Influent: CatBoost achieved 74.2% accuracy in predicting high PFAS concentrations.
 Effluent: CatBoost achieved 73.7% accuracy.
 Biosolids: CatBoost reached 78.0% accuracy.
+
 Using PFAS Concentrations in Influent:
+
 Effluent: CatBoost achieved the highest performance with an accuracy of 81.0%.
 Biosolids: AdaBoost performed best with 66.7% accuracy.
 
